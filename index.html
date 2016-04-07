@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" type="text/css"/>
 </head>
 <body>
-  <div class="contain">
+  <div id="contain">
 
     <header>
       <h1>Re-Animator</h1>
@@ -29,7 +29,7 @@
         <h2>Condemned to Eternity</h2>
         <h3>Re-Animator</h3>
         <p><a href="poster.html">Click here</a> to see a poster from the band on the porsters page</p>
-        <table border='1'>
+        <table >
           <tr>
             <th >Image</th>
             <th>Track Title</th>
@@ -103,10 +103,12 @@
       </section>
     </aside>
     </div>
-    <aside class="band_members">
-      <h2>
+    <hr>
+    <div class="clear">
+    <aside class=" left-col band_members">
+      <h3>
       Band Members
-    </h2>
+    </h3>
       <ul>
         <li>Kev Ingleson 1988-92 (lead Vocals, Lead, Rhythm Guitar) </li>
         <li>Mike Abel 1988-93 (Lead, Rhythm Guitar, Backing Vocals)</li>
@@ -118,28 +120,28 @@
         <li>Tony Calvert 1988 (Vocals)</li>
       </ul>
     </aside>
-  <div class="form clear">
+  <div class="form right-col clear">
     <h3>Request more band info</h3>
     <form action="https://httpbin.org/post" method="post">
       <div class="generic_info">
       <div class="neat">
         <label for="name">First Name</label>
-        <input type="text" name="FirstName" placeholder="First Name" >
+        <input id="name" type="text" name="FirstName" placeholder="First Name" >
       </div>
       <div class="neat">
         <label for="lastName">Last Name</label>
-        <input type="text" name="LastName" placeholder="Last Name">
+        <input id="lastName" type="text" name="LastName" placeholder="Last Name">
       </div>
       <div class="neat">
         <label for="Email">Email</label>
-        <input type="email" name="Email" placeholder="E-mail">
+        <input id="Email" type="email" name="Email" placeholder="E-mail">
       </div>
       <div class="neat">
         <label for="PhoneNumber">Phone</label>
-        <input type="tel" name="phoneNumber">
+        <input id="PhoneNumber" type="tel" name="phoneNumber">
       </div>
       <div class="">
-        <label for="contact">Best way to contact you</label>
+        <label>Best way to contact you</label>
         <select name="bestContact">
          <option value="Email">Email</option>
          <option value="Phone">Phone</option>
@@ -148,7 +150,7 @@
       </div>
     </div>
       <div class='neat'>
-        <label for="CDlist">Select Which CDs you are interested</label><br/>
+        <label>Select Which CDs you are interested</label><br/>
           <input type="checkbox" name="cds" value="Condemned to Eternity" checked="checked">Condemned to Eternity<br>
           <input type="checkbox" name="cds" value="Deny Reality ">Deny Reality<br>
           <input type="checkbox" name="cds" value="Laughing">Laughing<br>
@@ -156,19 +158,20 @@
       </div>
 
       <div class="neat">
-        <label for="newletter">Sign up for our newsletter to receive updates.</label><br/>
+        <label >Sign up for our newsletter to receive updates.</label><br/>
         <input type="radio" name="signup" value="yes" checked>Yes PLease<br/>
         <input type="radio" name="signup" value="no">No Thank you
       </div>
       <div class="neat clear">
         <label for="Date">Todays Date</label><br/>
-         <input type="date" name="date">
+         <input id="Date" type="date" name="date">
       </div>
       <div class="clear">
       <button type="submit">Submit</button>
     </div>
     </form>
   </div>
+</div>
   <article>
 
     <blockquote>
