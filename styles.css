@@ -1,9 +1,44 @@
 body{
   background:url('images/bg-body.png') #0B0B0B;
   color:#666;
-
+}
+.col-wrap .left-col,
+.col-wrap .right-col{
+  float:left;
+}
+.col-wrap .left-col{
+  padding-right:40px;
+  width: 40%;
+}
+.col-wrap .right-col{
+  width:56%;
+  float:left;
 }
 
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+h1,h2,h3{
+  margin-top:0px
+}
+h1{
+  color: #9E2929;
+  text-align: center;
+  border: 1px solid #E8E5E5;
+  text-shadow: 2px 2px 0px rgba(74, 11, 11, 0.15);
+  border-radius: 5px;
+  padding: .3em;
+  background-color: #f5f5f5;
+}
+h2{
+  color:#545454;
+}
+h3{
+  border-bottom:1px solid #ccc;
+  color:#696969;
+}
 em{
   color:#999;
 }
@@ -15,34 +50,13 @@ p{color:#666;}
   max-width:1140px;
   margin: 0 auto;
 }
-  h1,h2,h3{
-    margin-top:0px
-  }
-h1{
-  color: #9E2929;
-  text-align: center;
-  border: 1px solid #E8E5E5;
-  text-shadow: 2px 2px 0px rgba(74, 11, 11, 0.15);
-  border-radius: 5px;
-  padding: .3em;
-  background-color: #f5f5f5;
-  }
-h2{
-  color:#545454;
-}
-h3{
-  border-bottom:1px solid #ccc;
-  color:#696969;
-}
 a,a:visited{color:#CA7B04;}
 table{border-collapse: collapse;}
 table td,table th{
   border:1px solid #c9c9c9;
   padding:5px;
 }
-table {
-  float: left;
-}
+
 table th{
   background-color: #eee;
 }
@@ -63,14 +77,20 @@ vertical-align: middle;
 }
 li{
   padding:10px 0px;
+  border-bottom:1px dotted #ccc;
 }
+li:last-of-type{
+  border:0px;
+}
+
 figure{
   margin:5px;
 }
-.clear:before{
-  content: '';
-  display: block;
-  clear: both;
+img{
+  max-width: 100%;
+}
+.form{
+  max-width: 500px;
 }
 form div{
   padding:8px 0px;
@@ -81,9 +101,35 @@ footer div{
   padding:15px;
   font-style: italic;
 }
+.neat {
+    float: left;
+    width: 50%;
+}
+
+.generic_info  label {
+
+    display:block;
+}
 blockquote{
   background:#f5f5f5;
   border:1px solid #ececec;
   box-shadow: 0px 0px 4px #999;
   padding: 10px;
+}
+
+.band_members{
+  border:1px solid #ccc;
+  padding:20px;
+  margin:20px 0px;
+  border-radius:5px;
+}
+@media (max-width:1077px){
+  .col-wrap .left-col{
+    width:39%;
+  }
+/** end of media query **/
+}
+@media (max-width:900px){
+
+/** end of media query **/
 }
