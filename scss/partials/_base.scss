@@ -1,0 +1,196 @@
+@import '../modules/all';
+
+@import 'defaults';
+
+@import 'buttons';
+
+/** WEBSITE HEADER **/
+#header-wrap{
+	position: fixed;
+	top:0px;
+	width:100%;
+	z-index: -1;
+	height:911px;
+	background: url('../images/header.png') no-repeat center top #1c2c39;
+	background-size: cover;
+	color:$text_color_2;
+
+}
+
+#header-content{
+	text-align: center;
+	margin: auto;
+	max-width:1000px;
+	margin-top: 200px;
+}
+
+
+/** MIAN NAVIGATION **/
+.mobileNavLinks{
+	display: none;
+}
+.nav-wrap{
+	width: 100%;
+	position:fixed;
+	z-index:99;
+	top:48px;
+	@include transition(all 500ms ease-in-out);
+	background:rgba(28, 33, 37, 1);		
+	height:100%;
+	.na{
+		
+	}
+
+}
+.fixedNav{
+	margin-top:0px!important;
+	top:0px!important;
+	left:0;
+	z-index:999;
+	height:auto;
+	background:rgba(28, 33, 37, 1)!important;
+	@include box-shadow(0px 0px 5px #242424);
+	.nav{
+		margin-top:0px;
+	}
+}
+.mobileNav{
+	position:fixed;
+	background:rgba(28, 33, 37, 1);
+	z-index:9999;
+	top:0;
+	right:0;
+	width:100%;
+	text-align: right;
+	
+}
+.btn-menu{
+	cursor: pointer;
+	margin: 6px;
+	padding:4px;
+	overflow: hidden;
+	width:40px;	
+	display: inline-block;
+	span{
+		display:block;
+		background:$white;
+		padding:2px;
+		margin:3px 0px;
+		width:100%;
+		
+		
+	}
+}
+
+.nav{
+	
+	padding: 0;
+	margin:0;
+    list-style:none;	
+	&:before{
+		content:'';
+		display: block;
+		clear: both;
+	}
+	li{		
+		/*display: none;*/
+		text-transform:uppercase;
+		
+	}
+	a{
+		font-size:2em;
+		padding:15px;
+		display:block;
+		text-align: center;
+		color:#B1B0B0;
+		@include border-radius(3px);
+		@include transition(all 300ms ease-in-out);
+		&:visited{
+			color:#B1B0B0;
+		}
+		&:hover{
+			color:$text_color_2;			
+			background:rgba(255,255,255,.1);
+		
+		}
+	} 
+}
+
+.myName-header{
+	span{
+	color:#F5B624;
+	}
+}
+
+.intro-text{
+	text-transform: uppercase;
+	font:300 1.2em $robotoFont;
+}
+
+
+/** PAGES **/
+section[class^='page-']{
+	text-align: center;
+	background-color:$white;
+}
+#what-i-do{
+	margin-top:911px;
+	background-color: #fff;
+}
+
+.profileImg{
+	max-width:100%;
+	height:auto;
+}
+
+.myName-bio {
+	text-transform: capitalize;
+	text-align: center;
+	font:400 1.3em $robotoFont;
+	span{
+		display: block;
+		color: #666;
+		font-weight: 300;
+		font-size: .8em;
+	}
+}
+
+#mySkills{
+	div[class^="col-"]{
+		vertical-align: top;
+		text-align: left;
+		padding:20px;
+	}
+	
+} 
+
+/*** PORTFOLIO **/
+#my-Portfolio{
+    background:#1C2125;
+}
+
+.portList {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+		li{
+			overflow:hidden;
+			display: inline-block;
+			float: left;
+			width: 100%;
+		}
+		img{
+			display:block;
+			width: 100%;
+			height:auto;
+		}
+}
+
+footer{
+	background:$white;
+	font-size:.8em;
+	color:#999;
+	padding:15px;
+}
+
+@import 'mobile';

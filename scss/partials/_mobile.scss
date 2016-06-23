@@ -1,0 +1,78 @@
+@media (min-width:1000px){
+	body{font-size: 1.2em;}
+	.contentPadding{
+		padding:80px 20px;
+	}
+	
+	.col-group div[class^="col-"]{
+	display:inline-block;
+	}
+	
+	/** MAIN NAV**/
+	.nav-wrap{
+		margin-top:80px;
+		text-align: center;
+		width: 100%;
+		left:0;
+		right:0;	
+		background:none;
+		display:block;
+	}
+	
+
+	.btn-menu{
+		display:none;
+	}
+	
+	.nav{
+
+		li{
+			display:inline-block;
+			padding:15px 15px;
+		}
+		a{
+			font-size:1em!important;
+			padding:10px 20px;
+			border:1px solid #ccc;
+			&:visited{
+				display:inline-block;
+			}
+			&:hover{
+				border-color:$white;		
+			}
+		}    
+} 
+	
+	#mySkills div[class^="col-"]{
+	width:46%;
+	}
+	
+	.portList li {
+		width:20%;
+	}
+	
+	.devices-figure{
+	position:relative;
+	bottom:-150px;
+	}
+	
+
+/***END OF MEDIA QUERY***/
+}
+
+
+@media (max-width:900px){
+	
+	
+/***END OF MEDIA QUERY***/
+}
+
+@media (min-width: 480px) and (max-width: 1000px) {
+
+	.portList li {
+		width: 50%;
+	}
+	
+	
+		/***END OF MEDIA QUERY***/
+}

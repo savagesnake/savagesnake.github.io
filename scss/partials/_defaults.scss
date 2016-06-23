@@ -1,0 +1,44 @@
+body{
+	font:300 1em $robotoFont;
+	color:$text_color_1;
+}
+
+a{
+	color:$blue;
+	text-decoration: none;
+		&:visited{
+		color:inherit;
+		text-decoration:inherit;
+		}
+		&:hover{
+			color:$linkHover;
+		}
+}
+
+.contain{
+	max-width:1200px;
+	margin:0 auto;
+}
+
+.contentPadding{
+	padding:20px;
+}
+
+img{
+	max-width:100%;
+}
+h1,h2,h3{
+	text-transform: uppercase;
+}
+
+h1{
+	font:400 3em $FjallaFont;
+}
+h2{
+	font:300 2.2em $robotoFont;
+	color:#224058;
+}
+h3{
+	font:500 1.4em $robotoFont;
+	color:#224058;
+}

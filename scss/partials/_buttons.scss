@@ -1,0 +1,31 @@
+// button base
+.btn{
+	overflow:hidden;
+	display: inline-block;
+	padding:10px 20px;
+	background:#ececec;
+	text-decoration: none;
+	@include border-radius(4px);
+	@include transition(background 400ms ease-in-out);
+	}
+
+// dark button
+.btn-dark{
+	background:$darkBlue;
+	color:$text_color_2;
+	&:hover{
+		color:$text_color_2;
+		background: #32536D;
+	}
+}
+
+// download icon
+.icon-download{
+	background: url(../images/icon-download.png) no-repeat center center;	
+	width:20px;
+	height:20px;
+	display: block;
+	background-size:contain;
+	float:left;
+	margin-right:15px;
+}
